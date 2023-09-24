@@ -1,5 +1,21 @@
-h1 {
-  background-color: red; }
+.search-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%; }
 
-.test {
-  color: #000; }
+.control {
+  width: 20em; }
+
+.button {
+  margin-top: 1em;
+  width: 8em; }
+
+footer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  margin-bottom: 1em; }
