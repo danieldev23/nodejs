@@ -11,11 +11,3 @@
 .button {
   margin-top: 1em;
   width: 8em; }
-
-footer {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  bottom: 0;
-  margin-bottom: 1em; }

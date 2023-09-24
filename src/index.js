@@ -3,6 +3,8 @@ const morgan = require('morgan');
 const path = require('path');
 const app = express();
 const port = 3000;
+
+const db = require('./config/db');
 const route = require('./routes');
 
 const exphbs  = require('express-handlebars');
@@ -20,6 +22,9 @@ app.use(express.urlencoded({
 }));
 app.use(express.json());
 
+// Connect to DB
+db.connect();
+
 // Templates engine
 app.engine('hbs', hbs.engine);
 app.set('view engine', 'hbs');
@@ -27,7 +32,7 @@ app.set('views', path.join(__dirname, 'resources/views'));
  
 // Action ---> Dispatcher ---> Function Handler 
 
-
+// Route initialization
 route(app);
 
 app.listen(port, () => console.log(`Listening at http://localhost:${port}`));
