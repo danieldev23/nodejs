@@ -7,7 +7,7 @@ async function connect(params) {
         useUnifiedTopology: true
         
     });
-        console.log('Connect successfully!!!');
+        console.log('Connect with database successfully!!!');
     } catch (err) {
         console.log('Connect failure!!! ' + err.message);
 
